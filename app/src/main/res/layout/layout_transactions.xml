@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/ten">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transactLayout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transactImage"
+        android:src="@drawable/withdraw_green"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transactText"
+        android:layout_below="@+id/transactImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transactDate"
+        android:text="6:30 PM"
+        android:layout_below="@+id/transactText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLayout"
+        android:layout_toRightOf="@+id/transactLayout"
+        android:layout_marginLeft="@dimen/twenty">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            android:text="From:"/>
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/withdrawn"
+            android:layout_below="@+id/from"
+             android:text="Funds Withdrawn"
+             android:textSize="@dimen/twenty"
+             android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/withdrawn"
+            android:text="amount"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textLayout"
+        android:layout_marginLeft="@dimen/twenty">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transactIdText"
+            android:text="Transaction ID"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactIdText"
+            android:id="@+id/transactId"
+            android:text="2251445214"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactId"
+            android:text="2000.00"
+            android:textSize="@dimen/twenty"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

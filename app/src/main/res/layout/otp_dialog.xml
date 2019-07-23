@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterOtp"
+        android:text="@string/enterOtp"
+        android:textStyle="bold"
+        android:textSize="@dimen/twenty"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:id="@+id/otpText"
+        android:layout_below="@+id/enterOtp"
+        android:text="@string/otpText"
+        android:textSize="@dimen/twenty"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otpLayout"
+        android:layout_below="@id/otpText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/twenty">
+
+        <EditText
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:inputType="number"
+            android:layout_margin="@dimen/ten"/>
+
+        <EditText
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/one"
+            android:maxLength="1"
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_margin="@dimen/ten"/>
+
+        <EditText
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/two"
+            android:maxLength="1"
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_margin="@dimen/ten"/>
+
+        <EditText
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/three"
+            android:maxLength="1"
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_margin="@dimen/ten"/>
+
+        <EditText
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/four"
+            android:maxLength="1"
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_margin="@dimen/ten"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginRight="@dimen/twentyFive"
+        android:text="@string/resendotp"
+        android:textSize="@dimen/twenty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_below="@id/resendOtp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/twentyFive"
+        android:layout_marginRight="@dimen/twentyFive"
+        android:text="@string/submit"
+        android:textSize="@dimen/twenty"
+        android:layout_marginBottom="@dimen/ten"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:layout_below="@id/resendOtp"
+        android:layout_marginTop="@dimen/twentyFive"
+        android:layout_toLeftOf="@+id/submit"
+        android:layout_marginRight="@dimen/fifty"
+        android:text="@string/cancel"
+        android:textSize="@dimen/twenty"
+        android:layout_marginBottom="@dimen/ten"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

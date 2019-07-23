@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:id="@+id/first"
+        android:paddingLeft="@dimen/ten"
+        android:paddingRight="@dimen/ten"
+        android:background="@color/asscclblue">
+
+        <ImageView
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:id="@+id/close"
+            android:padding="@dimen/five"
+            android:src="@drawable/close"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/thirty"
+            android:text="@string/depositMoney"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/first"
+        android:layout_margin="@dimen/twenty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currencyDropDown"
+        android:layout_margin="@dimen/ten">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currText"
+            android:text="@string/currency"
+            android:textSize="@dimen/twenty"/>
+
+        <Spinner
+            android:layout_width="@dimen/hundred"
+            android:layout_height="@dimen/fifty"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/currText"
+            android:id="@+id/usd"
+            android:entries="@array/usd"
+            android:backgroundTint="@color/orange"></Spinner>
+
+        <Spinner
+            android:layout_width="@dimen/hundred"
+            android:layout_height="@dimen/fifty"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/currText"
+            android:id="@+id/inr"
+            android:entries="@array/inr"
+            android:backgroundTint="@color/orange"></Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currencyDropDown">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountTxtView"
+            android:text="@string/amount"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:id="@+id/amount"
+            android:layout_below="@+id/amountTxtView"
+            android:background="@drawable/border"
+            android:layout_margin="@dimen/ten"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usdText"
+            android:layout_below="@+id/amount"
+            android:text="@string/one"
+            android:layout_marginLeft="@dimen/ten"
+            android:textSize="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inrText"
+            android:layout_below="@+id/amount"
+            android:layout_toRightOf="@+id/usdText"
+            android:textSize="@dimen/twenty"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twohundred"
+            android:layout_below="@+id/usdText"
+            android:layout_margin="@dimen/twenty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:id="@+id/linearLayout">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/twenty">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="usd"
+                    android:id="@+id/ussd"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twentyFive"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ussd"
+                        android:text="@string/dolSymbol"
+                        android:id="@+id/dolSymbol"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentyFive"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ussd"
+                        android:id="@+id/totalDollars"
+                        android:layout_toRightOf="@+id/dolSymbol"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentyFive"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/twenty">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inr"
+                        android:id="@+id/innr"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentyFive"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/innr"
+                        android:text="@string/rupSymbol"
+                        android:id="@+id/rupSymbol"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentyFive"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/innr"
+                        android:id="@+id/totalInr"
+                        android:layout_toRightOf="@+id/rupSymbol"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentyFive"/>
+
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proceed"
+        android:text="@string/proceedText"
+        android:layout_marginBottom="@dimen/ten"
+        android:textSize="@dimen/fifteen"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceed"
+        android:layout_alignParentBottom="true"
+        android:text="@string/proceed"
+        android:gravity="center"
+        android:textSize="@dimen/thirty"
+        android:textColor="@color/white"
+        android:background="@color/orange"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

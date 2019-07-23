@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:id="@+id/first"
+        android:paddingLeft="@dimen/ten"
+        android:paddingRight="@dimen/ten"
+        android:background="@color/asscclblue">
+
+        <ImageView
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/fifty"
+            android:id="@+id/back"
+            android:padding="@dimen/five"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/thirty"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:layout_margin="@dimen/twenty">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmText"
+            android:text="@string/confirmText"
+            android:textSize="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inrText"
+            android:layout_below="@+id/confirmText"
+            android:text="@string/amountInr"
+            android:textSize="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inrAmount"
+            android:layout_below="@id/inrText"
+            android:textSize="@dimen/twentyFive"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usdText"
+            android:layout_below="@id/inrAmount"
+            android:text="@string/amountUsd"
+            android:textSize="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usdAmount"
+            android:layout_below="@+id/usdText"
+            android:textSize="@dimen/twentyFive"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rate"
+            android:layout_below="@+id/usdAmount"
+            android:text="@string/rate"
+            android:textSize="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:layout_below="@+id/rate"
+            android:text="@string/one"
+            android:textSize="@dimen/twentyFive"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalInr"
+            android:layout_below="@+id/rate"
+            android:layout_toRightOf="@+id/one"
+            android:textSize="@dimen/twentyFive"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:id="@+id/confirm"
+        android:layout_alignParentBottom="true"
+        android:text="@string/depositConfirm"
+        android:gravity="center"
+        android:textSize="@dimen/thirty"
+        android:textColor="@color/white"
+        android:background="@color/orange"/>
+
+</RelativeLayout>

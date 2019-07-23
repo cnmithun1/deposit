@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:background="@color/asscclblue">
+
+        <ImageView
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/thirtyFive"
+            android:id="@+id/close"
+            android:src="@drawable/close"
+            android:layout_margin="@dimen/fifteen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close"
+            android:text="@string/success"
+            android:textColor="@color/white"
+            android:textSize="@dimen/thirty"
+            android:layout_margin="@dimen/fifteen"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/first"
+        android:background="@color/grey"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/successLayout"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/thirty">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/twenty">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rupLayout"
+                android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rupSymbol"
+                android:text="@string/rupSymbol"
+                android:textSize="@dimen/twentyFive"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/depositedAmount"
+                android:layout_toRightOf="@+id/rupSymbol"
+                android:textSize="@dimen/twentyFive"
+                android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:id="@+id/depText"
+                android:text="@string/depositedText"
+                android:layout_below="@+id/rupLayout"
+                android:textSize="@dimen/twenty"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:id="@+id/emailId"
+                android:text="@string/email"
+                android:layout_below="@+id/depText"
+                android:textSize="@dimen/twenty"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullname"
+                android:layout_below="@+id/emailId"
+                android:text="@string/fullName"
+                android:textSize="@dimen/twenty"
+                android:layout_centerHorizontal="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginLeft="@dimen/hundred"
+                    android:layout_marginRight="@dimen/hundred"
+                    android:background="@color/black"
+                    android:layout_below="@+id/fullname"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:id="@+id/successMsg"
+                android:layout_below="@+id/fullname"
+                android:text="@string/transaction"
+                android:textSize="@dimen/twenty"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateTime"
+                android:layout_below="@+id/successMsg"
+                android:text="@string/dateTime"
+                android:textSize="@dimen/twenty"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateTime"
+                android:text="@string/transactId"
+                android:textSize="@dimen/twenty"
+                android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/successLayout"
+            android:layout_marginTop="@dimen/thirty"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fifteen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details"
+                android:text="@string/transactDetails"
+                android:textSize="@dimen/twenty"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usdText"
+                android:layout_below="@id/details"
+                android:text="@string/amountUsd"
+                android:textSize="@dimen/twenty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usdAmount"
+                android:layout_below="@+id/usdText"
+                android:textSize="@dimen/twentyFive"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rate"
+                android:layout_below="@+id/usdAmount"
+                android:text="@string/rate"
+                android:textSize="@dimen/twenty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one"
+                android:layout_below="@+id/rate"
+                android:text="@string/one"
+                android:textSize="@dimen/twentyFive"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalInr"
+                android:layout_below="@+id/rate"
+                android:layout_toRightOf="@+id/one"
+                android:textSize="@dimen/twentyFive"
+                android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

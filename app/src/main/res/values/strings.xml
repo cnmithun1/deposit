@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">assccl</string>
+    <string name="accName">Aishwarya Account</string>
+    <string name="email">aishwarya@assccl.com</string>
+    <string name="deposited">Deposited</string>
+    <string name="withdrawn">Withdrawan</string>
+    <string name="depositMoney">Deposit Money</string>
+    <string name="all">All</string>
+    <string name="Rs">\u20B9 11,00,100.00</string>
+    <string name="currency">Currency</string>
+    <string name="amount">Amount</string>
+    <string name="one">1 USD = </string>
+    <string name="inr">INR</string>
+    <string name="usd">USD</string>
+    <string name="rupSymbol">\u20B9</string>
+    <string name="dolSymbol">$</string>
+    <string name="proceed">Proceed</string>
+    <string name="proceedText">INR amount will be deducted from your Spark Savings Account balance. Please
+    maintain sufficient balance before proceeding</string>
+    <string name="confirm">Confirm Deposit</string>
+    <string name="confirmText">Please confirm the deposit transaction</string>
+    <string name="amountInr">Amount (INR)</string>
+    <string name="amountUsd">Amount (USD)</string>
+    <string name="rate">Rate</string>
+    <string name="depositConfirm">Confirm</string>
+    <string name="enterOtp">Enter OTP from Spark</string>
+    <string name="otpText">Enter the 5-digit One Time Password (OTP) sent by Spark </string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="success">Deposit Successful</string>
+    <string name="depositedText">deposited to Aishwarya account</string>
+    <string name="fullName">Aishwarya, member ID 1181</string>
+    <string name="transaction">Transaction successfull</string>
+    <string name="dateTime">10 June, 6:30 PM</string>
+    <string name="transactId">Transaction ID: 6524455214552</string>
+    <string name="transactDetails">TRANSACTION DETAILS</string>
+
+    <string-array name="usd">
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="inr">
+        <item>INR</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Duration = 1 means that one rotation will be done in 1 second. leave it.
+    If you want to speed up the rotation, increase duration value.
+    in example 1080 shows three times faster revolution.
+    make the value multiply of 360, or the ring animates clunky
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="2"
+    android:toDegrees="360" >
+
+    <shape
+        android:innerRadiusRatio="3"
+        android:shape="ring"
+        android:thicknessRatio="10"
+        android:useLevel="false" >
+        <size
+            android:height="120dip"
+            android:width="48dip" />
+
+        <gradient
+            android:centerColor="@color/darkgrey"
+            android:centerY="0.50"
+            android:endColor="@color/gray"
+            android:startColor="@color/gray80"
+            android:type="sweep"
+            android:useLevel="false" />
+    </shape>
+
+</rotate>
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape>
+                <padding android:top="1dp" />
+                <solid android:color="#10444444" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <padding android:top="1dp" />
+                <solid android:color="#20444444" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <padding android:top="1dp" />
+                <solid android:color="#30444444" />
+            </shape>
+        </item>
+        <item android:id="@android:id/background">
+            <shape>
+                <solid android:color="@color/colorPrimary" />
+            </shape>
+        </item>
+
+        <item android:id="@android:id/progress">
+            <clip>
+                <shape>
+                    <solid android:color="#3500D0" />
+                </shape>
+            </clip>
+        </item>
+    </layer-list>-->
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@android:id/progress">
+            <clip>
+                <shape>
+                    <solid android:color="@color/black" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </clip>
+        </item>
+    </layer-list>-->
