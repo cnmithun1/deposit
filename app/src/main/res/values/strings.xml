@@ -35,7 +35,6 @@
     <string name="dateTime">10 June, 6:30 PM</string>
     <string name="transactId">Transaction ID: 6524455214552</string>
     <string name="transactDetails">TRANSACTION DETAILS</string>
-    <string name="hi">HI</string>
 
     <string-array name="usd">
         <item>USD</item>
